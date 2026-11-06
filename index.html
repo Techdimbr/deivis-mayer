@@ -21,6 +21,7 @@
   <meta property="og:title" content="Eng. Deivis Irio Mayer | Liderança em Google IA & TECHDIM">
   <meta property="og:description" content="Arquiteto de Soluções Google Cloud, IA Agêntica (Gemini & Antigravity) e Cibersegurança Soberana.">
   <meta property="og:url" content="https://techdimbr.github.io/deivis-mayer/">
+  <meta property="og:image" content="https://techdimbr.github.io/deivis-mayer/assets/deivis-mayer-executivo.jpg">
   <meta property="og:site_name" content="Deivis Irio Mayer - Portal Executivo Oficial">
   <meta property="profile:first_name" content="Deivis">
   <meta property="profile:last_name" content="Mayer">
@@ -30,6 +31,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Eng. Deivis Irio Mayer | Soluções Google IA">
   <meta name="twitter:description" content="Transformando o ecossistema Google em operações corporativas autônomas, seguras e de alta rentabilidade.">
+  <meta name="twitter:image" content="https://techdimbr.github.io/deivis-mayer/assets/deivis-mayer-executivo.jpg">
 
   <!-- Schema.org JSON-LD para Google Knowledge Graph e Motores de IA -->
   <script type="application/ld+json">
@@ -42,6 +44,7 @@
         "name": "Deivis Irio Mayer",
         "alternateName": ["Eng. Deivis Irio Mayer", "Deivis Mayer", "Kether1"],
         "jobTitle": "Lead Software Engineer, Solutions Architect & Google AI Specialist",
+        "image": "https://techdimbr.github.io/deivis-mayer/assets/deivis-mayer-executivo.jpg",
         "description": "Engenheiro de Software e Arquiteto de Soluções especializado em Inteligência Artificial Agêntica Google (Gemini e Antigravity), Cibersegurança em Linux Debian 13 e governança corporativa.",
         "worksFor": {
           "@type": "Organization",
@@ -123,7 +126,7 @@
     }
 
     .container {
-      max-width: 1040px;
+      max-width: 1080px;
       margin: 0 auto;
       padding: 0 24px;
     }
@@ -133,8 +136,8 @@
       position: sticky;
       top: 0;
       z-index: 50;
-      background: rgba(7, 10, 18, 0.85);
-      backdrop-filter: blur(12px);
+      background: rgba(7, 10, 18, 0.88);
+      backdrop-filter: blur(14px);
       border-bottom: 1px solid var(--card-border);
       padding: 16px 0;
     }
@@ -181,7 +184,13 @@
 
     /* Hero Section */
     .hero {
-      padding: 80px 0 60px 0;
+      padding: 70px 0 60px 0;
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.25fr 0.85fr;
+      gap: 40px;
+      align-items: center;
     }
     .status-badge {
       display: inline-flex;
@@ -194,7 +203,7 @@
       border-radius: 9999px;
       font-size: 0.82rem;
       font-weight: 600;
-      margin-bottom: 24px;
+      margin-bottom: 20px;
     }
     .status-dot {
       width: 8px;
@@ -204,7 +213,7 @@
       box-shadow: 0 0 10px var(--emerald);
     }
     h1.hero-title {
-      font-size: 3.2rem;
+      font-size: 3.1rem;
       font-weight: 800;
       letter-spacing: -1.5px;
       line-height: 1.15;
@@ -214,17 +223,16 @@
       -webkit-text-fill-color: transparent;
     }
     .hero-subtitle {
-      font-size: 1.35rem;
+      font-size: 1.25rem;
       color: var(--google-blue);
       font-weight: 500;
-      margin-bottom: 24px;
+      margin-bottom: 20px;
       line-height: 1.4;
     }
     .hero-manifesto {
-      font-size: 1.1rem;
+      font-size: 1.02rem;
       color: var(--text-muted);
-      max-width: 840px;
-      margin-bottom: 35px;
+      margin-bottom: 30px;
       border-left: 3px solid var(--google-blue);
       padding-left: 18px;
       font-style: italic;
@@ -232,13 +240,54 @@
     .hero-actions {
       display: flex;
       flex-wrap: wrap;
-      gap: 14px;
+      gap: 12px;
     }
+
+    /* Hero Photo Card */
+    .hero-photo-wrapper {
+      position: relative;
+      border-radius: 18px;
+      overflow: hidden;
+      border: 1px solid rgba(66, 133, 244, 0.3);
+      box-shadow: 0 20px 45px rgba(0, 0, 0, 0.6), 0 0 30px rgba(66, 133, 244, 0.15);
+      background: var(--card-bg);
+    }
+    .hero-photo {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+    .hero-photo-wrapper:hover .hero-photo {
+      transform: scale(1.02);
+    }
+    .hero-photo-badge {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(180deg, rgba(7, 10, 18, 0) 0%, rgba(7, 10, 18, 0.95) 40%, rgba(7, 10, 18, 1) 100%);
+      padding: 30px 18px 18px 18px;
+      text-align: center;
+    }
+    .hero-photo-badge strong {
+      display: block;
+      font-size: 1.05rem;
+      color: #ffffff;
+      font-weight: 700;
+    }
+    .hero-photo-badge span {
+      font-size: 0.82rem;
+      color: #93c5fd;
+      letter-spacing: 0.5px;
+    }
+
     .btn {
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      padding: 12px 24px;
+      padding: 12px 22px;
       border-radius: 8px;
       font-weight: 600;
       text-decoration: none;
@@ -266,7 +315,7 @@
 
     /* Cards & Sections */
     section {
-      padding: 50px 0;
+      padding: 55px 0;
       border-top: 1px solid rgba(255, 255, 255, 0.05);
     }
     h2.section-title {
@@ -282,7 +331,7 @@
       color: var(--text-muted);
       font-size: 1.05rem;
       margin-bottom: 30px;
-      max-width: 800px;
+      max-width: 820px;
     }
     .card {
       background: var(--card-bg);
@@ -296,7 +345,96 @@
       background: linear-gradient(180deg, rgba(66, 133, 244, 0.06) 0%, rgba(14, 21, 38, 1) 100%);
     }
 
-    /* Grid */
+    /* Data Center Panoramic Banner */
+    .datacenter-banner-wrapper {
+      position: relative;
+      border-radius: 14px;
+      overflow: hidden;
+      border: 1px solid var(--card-border);
+      margin-bottom: 35px;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    }
+    .datacenter-banner-img {
+      width: 100%;
+      height: 330px;
+      object-fit: cover;
+      display: block;
+    }
+    .datacenter-caption {
+      position: absolute;
+      bottom: 16px;
+      left: 20px;
+      right: 20px;
+      background: rgba(7, 10, 18, 0.85);
+      backdrop-filter: blur(8px);
+      padding: 10px 18px;
+      border-radius: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .datacenter-caption span {
+      font-size: 0.88rem;
+      color: #e2e8f0;
+      font-weight: 500;
+    }
+    .datacenter-tag {
+      background: rgba(66, 133, 244, 0.2);
+      border: 1px solid #4285F4;
+      color: #93c5fd;
+      padding: 3px 10px;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    /* Bio Section with Conference Photo */
+    .bio-grid {
+      display: grid;
+      grid-template-columns: 0.8fr 1.2fr;
+      gap: 32px;
+      align-items: center;
+    }
+    .bio-photo-wrapper {
+      border-radius: 14px;
+      overflow: hidden;
+      border: 1px solid var(--card-border);
+      position: relative;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+    }
+    .bio-photo {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+    }
+    .bio-photo-tag {
+      position: absolute;
+      bottom: 12px;
+      left: 12px;
+      background: rgba(7, 10, 18, 0.88);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 0.75rem;
+      color: #93c5fd;
+      font-weight: 600;
+    }
+    .bio-content p {
+      color: var(--text-muted);
+      font-size: 1.02rem;
+      margin-bottom: 15px;
+      line-height: 1.7;
+    }
+    .bio-content strong {
+      color: #ffffff;
+    }
+
+    /* Grid 3 */
     .grid-3 {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
@@ -313,7 +451,7 @@
       border-color: var(--google-blue);
     }
     .feature-card h3 {
-      font-size: 1.2rem;
+      font-size: 1.18rem;
       color: #ffffff;
       margin-bottom: 10px;
       display: flex;
@@ -338,23 +476,13 @@
       letter-spacing: 0.5px;
     }
 
-    /* Bio Section */
-    .bio-content p {
-      color: var(--text-muted);
-      font-size: 1.05rem;
-      margin-bottom: 16px;
-      line-height: 1.7;
-    }
-    .bio-content strong {
-      color: #ffffff;
-    }
-
     /* Telemetry & Badges */
     .telemetry-badges {
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
       margin-top: 15px;
+      justify-content: center;
     }
     .telemetry-badges img {
       height: 28px;
@@ -369,9 +497,22 @@
       font-size: 0.9rem;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 860px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
+      }
+      .hero-photo-wrapper {
+        max-width: 320px;
+        margin: 20px auto 0 auto;
+      }
+      .bio-grid {
+        grid-template-columns: 1fr;
+      }
+      .datacenter-banner-img {
+        height: 240px;
+      }
       h1.hero-title {
-        font-size: 2.3rem;
+        font-size: 2.4rem;
       }
       .nav-links {
         display: none;
@@ -400,27 +541,41 @@
   <!-- Hero Section -->
   <main class="container">
     <section class="hero">
-      <div class="status-badge">
-        <span class="status-dot"></span>
-        DISPONÍVEL PARA CONTRATOS EXECUTIVOS & CONSULTORIA
-      </div>
-      <h1 class="hero-title">Eng. Deivis Irio Mayer</h1>
-      <div class="hero-subtitle">
-        Arquiteto de Soluções, Especialista em IA Agêntica Google (Gemini & Antigravity) e Fundador da TECHDIM INOVA SIMPLES.
-      </div>
-      <div class="hero-manifesto">
-        "Honrando a história, o rigor e a excelência dos engenheiros e criadores que construíram a Alphabet / Google. O nosso compromisso é avançar a fronteira da tecnologia com Inteligência Artificial, arquiteturas soberanas e sistemas corporativos autônomos de alta resiliência."
-      </div>
-      <div class="hero-actions">
-        <a href="https://wa.me/5519996153276?text=Ol%C3%A1%20Deivis%2C%20gostaria%20de%20agendar%20um%20diagn%C3%B3stico%20de%20arquitetura%20Google%20para%20minha%20empresa!" target="_blank" class="btn btn-primary">
-          💬 Agendar Diagnóstico Estratégico
-        </a>
-        <a href="https://github.com/Techdimbr/daily-engineering-lab" target="_blank" class="btn btn-secondary">
-          🚀 Explorar Daily Lab (1.000+ Commits)
-        </a>
-        <a href="llms.txt" target="_blank" class="btn btn-secondary">
-          🤖 Manifesto para IAs (llms.txt)
-        </a>
+      <div class="hero-grid">
+        <!-- Coluna da Esquerda: Textos & CTAs -->
+        <div>
+          <div class="status-badge">
+            <span class="status-dot"></span>
+            DISPONÍVEL PARA CONTRATOS EXECUTIVOS & CONSULTORIA
+          </div>
+          <h1 class="hero-title">Eng. Deivis Irio Mayer</h1>
+          <div class="hero-subtitle">
+            Arquiteto de Soluções, Especialista em IA Agêntica Google (Gemini & Antigravity) e Fundador da TECHDIM INOVA SIMPLES.
+          </div>
+          <div class="hero-manifesto">
+            "Honrando a história, o rigor e a excelência dos engenheiros e criadores que construíram a Alphabet / Google. O nosso compromisso é avançar a fronteira da tecnologia com Inteligência Artificial, arquiteturas soberanas e sistemas corporativos autônomos de alta resiliência."
+          </div>
+          <div class="hero-actions">
+            <a href="https://wa.me/5519996153276?text=Ol%C3%A1%20Deivis%2C%20gostaria%20de%20agendar%20um%20diagn%C3%B3stico%20de%20arquitetura%20Google%20para%20minha%20empresa!" target="_blank" class="btn btn-primary">
+              💬 Agendar Diagnóstico Estratégico
+            </a>
+            <a href="https://github.com/Techdimbr/daily-engineering-lab" target="_blank" class="btn btn-secondary">
+              🚀 Explorar Daily Lab (1.000+ Commits)
+            </a>
+            <a href="llms.txt" target="_blank" class="btn btn-secondary">
+              🤖 Manifesto para IAs (llms.txt)
+            </a>
+          </div>
+        </div>
+
+        <!-- Coluna da Direita: Foto Executiva de Terno -->
+        <div class="hero-photo-wrapper">
+          <img src="assets/deivis-mayer-executivo.jpg" alt="Eng. Deivis Irio Mayer - Arquiteto de Soluções Google IA" class="hero-photo" width="684" height="891" />
+          <div class="hero-photo-badge">
+            <strong>Eng. Deivis Irio Mayer</strong>
+            <span>Liderança Técnica & Fundador TECHDIM</span>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -430,6 +585,15 @@
       <p class="section-desc">
         Ajudamos empresas a sair do improviso tecnológico e adotar a infraestrutura e a inteligência artificial mais avançadas do planeta, eliminando custos desordenados e blindando dados sensíveis.
       </p>
+
+      <!-- Banner Panorâmico Data Center -->
+      <div class="datacenter-banner-wrapper">
+        <img src="assets/deivis-mayer-datacenter.jpg" alt="Data Center & Arquitetura Soberana Google Cloud" class="datacenter-banner-img" width="1376" height="768" />
+        <div class="datacenter-caption">
+          <span>🏛️ Infraestrutura Soberana, Arquiteturas de Baixa Latência e Ambientes de Missão Crítica</span>
+          <span class="datacenter-tag">Debian 13 · Cloud GCP · Zero-Trust</span>
+        </div>
+      </div>
 
       <div class="grid-3">
         <!-- Pequenas Empresas -->
@@ -461,19 +625,29 @@
       </div>
     </section>
 
-    <!-- Biografia e Visão Kether_1 -->
+    <!-- Biografia e Visão Kether_1 com Foto do Evento Google Cloud -->
     <section id="biografia" class="card card-highlight">
       <h2 class="section-title">🏛️ Biografia Profissional & O Protocolo Kether_1</h2>
-      <div class="bio-content">
-        <p>
-          Sob o pseudônimo técnico <strong>Kether1</strong>, o <strong>Eng. Deivis Irio Mayer</strong> consolidou uma abordagem de engenharia baseada na <strong>Transmutação da Entropia</strong>: transformar o caos operacional, os custos ocultos de TI e os gargalos de empresas em sistemas ordenados, elegantes e altamente lucrativos.
-        </p>
-        <p>
-          Como fundador e líder técnico da <strong>TECHDIM INOVA SIMPLES (I.S.) - ME</strong> em Campinas/SP, Deivis combina cibersegurança defensiva profunda em <strong>Linux Debian 13 (Trixie/Sid)</strong>, isolamento Zero-Trust via <strong>KVM/QEMU</strong>, integrações nativas com <strong>Microsoft Active Directory (Kerberos/SSSD)</strong> e desenvolvimento de ponta em <strong>Google Gemini</strong> e <strong>Antigravity</strong>.
-        </p>
-        <p>
-          Com o compromisso de operar sempre no estado da arte, Deivis atua como conselheiro e arquiteto para executivos, diretores e CTOs que buscam transformar a tecnologia em uma vantagem competitiva real e duradoura.
-        </p>
+      
+      <div class="bio-grid">
+        <!-- Foto de Evento com Crachá Google Cloud -->
+        <div class="bio-photo-wrapper">
+          <img src="assets/deivis-mayer-google-cloud.jpg" alt="Deivis Irio Mayer em Rodada de Negócios com Crachá Google Cloud" class="bio-photo" width="2048" height="2048" />
+          <div class="bio-photo-tag">📍 Fórum de Negócios & Google Cloud</div>
+        </div>
+
+        <!-- Texto Biográfico -->
+        <div class="bio-content">
+          <p>
+            Sob o pseudônimo técnico <strong>Kether1</strong>, o <strong>Eng. Deivis Irio Mayer</strong> consolidou uma abordagem de engenharia baseada na <strong>Transmutação da Entropia</strong>: transformar o caos operacional, os custos ocultos de TI e os gargalos de empresas em sistemas ordenados, elegantes e altamente lucrativos.
+          </p>
+          <p>
+            Como fundador e líder técnico da <strong>TECHDIM INOVA SIMPLES (I.S.) - ME</strong> em Campinas/SP, Deivis combina cibersegurança defensiva profunda em <strong>Linux Debian 13 (Trixie/Sid)</strong>, isolamento Zero-Trust via <strong>KVM/QEMU</strong>, integrações nativas com <strong>Microsoft Active Directory (Kerberos/SSSD)</strong> e desenvolvimento de ponta em <strong>Google Gemini</strong> e <strong>Antigravity</strong>.
+          </p>
+          <p>
+            Com o compromisso de operar sempre no estado da arte, Deivis atua como conselheiro e arquiteto para executivos, diretores e CTOs que buscam transformar a tecnologia em uma vantagem competitiva real e duradoura.
+          </p>
+        </div>
       </div>
     </section>
 
